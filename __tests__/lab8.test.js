@@ -74,7 +74,7 @@ describe('Basic user flow for Website', () => {
     let productItems = await page.$$('product-item');
     // Check to see if the innerText of #cart-count is 20
     for (let i = 1; i < productItems.length; i++) {
-      let shadowRoot = await prodItems[i].getProperty('shadowRoot');
+      let shadowRoot = await productItems[i].getProperty('shadowRoot');
       let button = await shadowRoot.$('button');
       await button.click();
     }
