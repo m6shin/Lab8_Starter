@@ -1,1 +1,6 @@
 # Lab 8 - Starter
+Names: Matthew Shin
+1. I'd fit the automated tests in my Recipe project development pipeline within a Github action that runs whenever code is pushed since it is faster than manually running them locally before pushing code for the most part, and it is safer than running them all after all development is completed because the code has to pass the tests every time one pushes it.
+2. No, I would not use an end to end test to check if a function is returning the correct output.
+3. No, I would not use a unit test to test the “message” feature of a messaging application since unit tests are used to test small things like functions and methods among other things and the message feature has multiple components and thus, is more complex than anything a unit test would be useful for testing.
+4. Yes, I would use a unit test to test the “max message length” feature of a messaging application since the length is likely an independent component, so a unit test will return a correct result.
